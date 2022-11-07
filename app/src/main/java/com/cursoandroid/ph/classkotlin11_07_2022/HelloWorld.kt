@@ -9,4 +9,13 @@ fun main () {
     println("Digite a sua idade: ")
     val age: Int = readln().toInt()
     println("Você tem $age anos.")
+    // valores nulos
+    println("Digite a próxima idade: ")
+    val age2: Int = readln().toIntOrNull() ?: 0
+    if (age2 != 0) {
+        println("Idade $age")
+    } else {
+        println("Idade digitada incorreta. Digite um valor inteiro.")
+    }
+
 }
