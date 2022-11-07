@@ -5,4 +5,8 @@ fun main () {
     println("Digite seu nome:")
     val name = readln()
     println("Hello $name!")
+    println(name.uppercase())
+    println("Digite a sua idade: ")
+    val age: Int = readln().toInt()
+    println("Você tem $age anos.")
 }
