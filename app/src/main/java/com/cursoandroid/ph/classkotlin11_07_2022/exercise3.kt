@@ -1,14 +1,13 @@
 package com.cursoandroid.ph.classkotlin11_07_2022
 
-fun main () {
-    println("Digite o primeiro nome: ")
-    val firstName: String = readln()
-    println("Digite o último nome: ")
-    val lastName: String = readln()
-    println("Digite a sua idade: ")
-    val age: Int = readln().toInt()
-    var nick: String
-    for (i in firstName){
+fun main() {
+    println("Digite o nome: ")
+    val firstName = readln()
+    println("Digite o sobrenome: ")
+    val lastName = readln()
+    println("Digite o ano de nascimento: ")
+    val year = readln()
+    val nickName: String = firstName.substring(0,2).lowercase() + lastName.reversed().lowercase() + year.substring(2,4)
 
-    }
+    println("nick gerado: $nickName")
 }
